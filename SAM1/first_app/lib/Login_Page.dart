@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'FirstScreen.dart';
-import 'sign_in.dart';
+import 'google_sign_in.dart';
 
 
 
@@ -20,13 +20,14 @@ class _LoginPageState extends State<LoginPage> {
         mainAxisSize: MainAxisSize.max,
         mainAxisAlignment: MainAxisAlignment.start,
         children: <Widget>[
+          Container(child:  Image(image: AssetImage("assets/img.png"),height: 200,),padding: EdgeInsets.only(top: 60),),
           Padding(padding: EdgeInsets.only(left: 20, right: 20)),
-            SizedBox(height: 150),
+            SizedBox(height: 10),
             Text(
               "A Place for Thoughts And Ideas",
               style: TextStyle(fontStyle: FontStyle.italic),
             ),
-          SizedBox(height: 50),
+          SizedBox(height: 20),
           Container(padding: EdgeInsets.only(left: 20,right: 20),child:TextFormField(
               keyboardType: TextInputType.emailAddress,
               style: TextStyle(color: Colors.deepOrange[400]),
